@@ -9,7 +9,7 @@ set_and_check(CryptoCommitment_INCLUDE_DIR  "${CMAKE_INSTALL_PREFIX}/include/saf
 set_and_check(CryptoCommitment_INCLUDE_DIRS "${CMAKE_INSTALL_PREFIX}/include/safeheron")
 set_and_check(CryptoCommitment_LIBRARY_DIR "${CMAKE_INSTALL_PREFIX}/lib")
 
-
+MESSAGE(STATUS "###################################")
 MESSAGE(STATUS "operation system is ${CMAKE_SYSTEM}")
 
 IF (CMAKE_SYSTEM_NAME MATCHES "Darwin")

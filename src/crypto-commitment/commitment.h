@@ -19,6 +19,12 @@ safeheron::bignum::BN CreateComWithBlind(curve::CurvePoint &point, safeheron::bi
 
 safeheron::bignum::BN CreateComWithBlind(std::vector<curve::CurvePoint> &points, safeheron::bignum::BN &blind_factor);
 
+safeheron::bignum::BN CreateCom(safeheron::bignum::BN &num);
+
+safeheron::bignum::BN CreateCom(curve::CurvePoint &point);
+
+safeheron::bignum::BN CreateCom(std::vector<curve::CurvePoint> &points);
+
 }
 }
 

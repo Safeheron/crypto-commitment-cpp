@@ -4,6 +4,7 @@
 
 #include "commitment.h"
 #include "crypto-hash/sha256.h"
+#include "crypto-bn/rand.h"
 
 using safeheron::bignum::BN;
 using safeheron::hash::CSHA256;
@@ -56,6 +57,27 @@ BN CreateComWithBlind(std::vector<CurvePoint> &points, BN &blind_factor) {
 
     sha256.Finalize(digest);
     return BN::FromBytesBE(digest, CSHA256::OUTPUT_SIZE);
+}
+
+BN CreateCom(BN &num) {
+    size_t byte_len = num.BitLength() / 8;
+    if(byte_len == 0) {
+        byte_len = 1;
+    }else if(byte_len * 8 < num.BitLength()){
+        byte_len ++;
+    }
+    BN blind_factor = safeheron::rand::RandomBN(byte_len);
+    return CreateComWithBlind(num, blind_factor);
+}
+
+BN CreateCom(CurvePoint &point) {
+    BN blind_factor = safeheron::rand::RandomBN(32);
+    return CreateComWithBlind(point, blind_factor);
+}
+
+BN CreateCom(std::vector<CurvePoint> &points) {
+    BN blind_factor = safeheron::rand::RandomBN(32);
+    return CreateComWithBlind(points, blind_factor);
 }
 
 }
