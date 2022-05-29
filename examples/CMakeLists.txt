@@ -10,21 +10,20 @@ find_package(PkgConfig REQUIRED)
 pkg_search_module(PROTOBUF REQUIRED protobuf)  # this looks for *.pc file
 include_directories(${PROTOBUF_INCLUDE_DIRS})
 
-find_package(GTest REQUIRED)
 #set(OPENSSL_USE_STATIC_LIBS TRUE)
 find_package(OpenSSL REQUIRED)
 find_package(CryptoCommitment REQUIRED)
 
-add_executable(commitment-test commitment-test.cpp)
-target_include_directories(commitment-test PUBLIC
+add_executable(example example.cpp)
+target_include_directories(example PUBLIC
         ${CryptoCommitment_INCLUDE_DIRS}
         ${OPENSSL_INCLUDE_DIR}
-        ${GTEST_INCLUDE_DIRS}
+        ${PROTOBUF_INCLUDE_DIRS}
 )
 
-target_link_libraries(commitment-test
+target_link_libraries(example
         CryptoCommitment
-        ${GTEST_BOTH_LIBRARIES}
+        OpenSSL::Crypto
         ${PROTOBUF_LINK_LIBRARIES}
         pthread )
 
