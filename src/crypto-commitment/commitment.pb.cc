@@ -5,69 +5,60 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-extern PROTOBUF_INTERNAL_EXPORT_curve_5fpoint_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CurvePoint_curve_5fpoint_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_curve_5fpoint_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CurvePoint_curve_5fpoint_2eproto;
 namespace safeheron {
 namespace proto {
 class KGDDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<KGD> _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<KGD> _instance;
 } _KGD_default_instance_;
 class KGD_NumDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<KGD_Num> _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<KGD_Num> _instance;
 } _KGD_Num_default_instance_;
 }  // namespace proto
 }  // namespace safeheron
-static void InitDefaultsKGD_commitment_2eproto() {
+static void InitDefaultsscc_info_KGD_commitment_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::safeheron::proto::_KGD_default_instance_;
     new (ptr) ::safeheron::proto::KGD();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::safeheron::proto::KGD::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_KGD_commitment_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsKGD_commitment_2eproto}, {
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_KGD_commitment_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_KGD_commitment_2eproto}, {
       &scc_info_CurvePoint_curve_5fpoint_2eproto.base,}};
 
-static void InitDefaultsKGD_Num_commitment_2eproto() {
+static void InitDefaultsscc_info_KGD_Num_commitment_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::safeheron::proto::_KGD_Num_default_instance_;
     new (ptr) ::safeheron::proto::KGD_Num();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::safeheron::proto::KGD_Num::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_KGD_Num_commitment_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsKGD_Num_commitment_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_KGD_Num_commitment_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_KGD_Num_commitment_2eproto}, {}};
 
-void InitDefaults_commitment_2eproto() {
-  ::google::protobuf::internal::InitSCC(&scc_info_KGD_commitment_2eproto.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_KGD_Num_commitment_2eproto.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_commitment_2eproto[2];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_commitment_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_commitment_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata_commitment_2eproto[2];
-constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_commitment_2eproto = nullptr;
-constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_commitment_2eproto = nullptr;
-
-const ::google::protobuf::uint32 TableStruct_commitment_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_commitment_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::safeheron::proto::KGD, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -83,88 +74,75 @@ const ::google::protobuf::uint32 TableStruct_commitment_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::safeheron::proto::KGD_Num, num_),
   PROTOBUF_FIELD_OFFSET(::safeheron::proto::KGD_Num, blindfactor_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::safeheron::proto::KGD)},
   { 7, -1, sizeof(::safeheron::proto::KGD_Num)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::safeheron::proto::_KGD_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::safeheron::proto::_KGD_Num_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::safeheron::proto::_KGD_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::safeheron::proto::_KGD_Num_default_instance_),
 };
 
-::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_commitment_2eproto = {
-  {}, AddDescriptors_commitment_2eproto, "commitment.proto", schemas,
-  file_default_instances, TableStruct_commitment_2eproto::offsets,
-  file_level_metadata_commitment_2eproto, 2, file_level_enum_descriptors_commitment_2eproto, file_level_service_descriptors_commitment_2eproto,
-};
-
-const char descriptor_table_protodef_commitment_2eproto[] =
+const char descriptor_table_protodef_commitment_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\020commitment.proto\022\017safeheron.proto\032\021cur"
   "ve_point.proto\"B\n\003KGD\022&\n\001y\030\001 \001(\0132\033.safeh"
   "eron.proto.CurvePoint\022\023\n\013blindFactor\030\002 \001"
   "(\t\"+\n\007KGD_Num\022\013\n\003num\030\001 \001(\t\022\023\n\013blindFacto"
   "r\030\002 \001(\tb\006proto3"
   ;
-::google::protobuf::internal::DescriptorTable descriptor_table_commitment_2eproto = {
-  false, InitDefaults_commitment_2eproto, 
-  descriptor_table_protodef_commitment_2eproto,
-  "commitment.proto", &assign_descriptors_table_commitment_2eproto, 175,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_commitment_2eproto_deps[1] = {
+  &::descriptor_table_curve_5fpoint_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_commitment_2eproto_sccs[2] = {
+  &scc_info_KGD_commitment_2eproto.base,
+  &scc_info_KGD_Num_commitment_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_commitment_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_commitment_2eproto = {
+  false, false, descriptor_table_protodef_commitment_2eproto, "commitment.proto", 175,
+  &descriptor_table_commitment_2eproto_once, descriptor_table_commitment_2eproto_sccs, descriptor_table_commitment_2eproto_deps, 2, 1,
+  schemas, file_default_instances, TableStruct_commitment_2eproto::offsets,
+  file_level_metadata_commitment_2eproto, 2, file_level_enum_descriptors_commitment_2eproto, file_level_service_descriptors_commitment_2eproto,
 };
 
-void AddDescriptors_commitment_2eproto() {
-  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
-  {
-    ::AddDescriptors_curve_5fpoint_2eproto,
-  };
- ::google::protobuf::internal::AddDescriptors(&descriptor_table_commitment_2eproto, deps, 1);
-}
-
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_commitment_2eproto = []() { AddDescriptors_commitment_2eproto(); return true; }();
+static bool dynamic_init_dummy_commitment_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_commitment_2eproto)), true);
 namespace safeheron {
 namespace proto {
 
 // ===================================================================
 
-void KGD::InitAsDefaultInstance() {
-  ::safeheron::proto::_KGD_default_instance_._instance.get_mutable()->y_ = const_cast< ::safeheron::proto::CurvePoint*>(
-      ::safeheron::proto::CurvePoint::internal_default_instance());
-}
-class KGD::HasBitSetters {
+class KGD::_Internal {
  public:
   static const ::safeheron::proto::CurvePoint& y(const KGD* msg);
 };
 
 const ::safeheron::proto::CurvePoint&
-KGD::HasBitSetters::y(const KGD* msg) {
+KGD::_Internal::y(const KGD* msg) {
   return *msg->y_;
 }
 void KGD::clear_y() {
-  if (GetArenaNoVirtual() == nullptr && y_ != nullptr) {
+  if (GetArena() == nullptr && y_ != nullptr) {
     delete y_;
   }
   y_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int KGD::kYFieldNumber;
-const int KGD::kBlindFactorFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-KGD::KGD()
-  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
+KGD::KGD(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:safeheron.proto.KGD)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:safeheron.proto.KGD)
 }
 KGD::KGD(const KGD& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  blindfactor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.blindfactor().size() > 0) {
-    blindfactor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.blindfactor_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  blindfactor_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_blindfactor().empty()) {
+    blindfactor_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_blindfactor(), 
+      GetArena());
   }
-  if (from.has_y()) {
+  if (from._internal_has_y()) {
     y_ = new ::safeheron::proto::CurvePoint(*from.y_);
   } else {
     y_ = nullptr;
@@ -173,224 +151,124 @@ KGD::KGD(const KGD& from)
 }
 
 void KGD::SharedCtor() {
-  ::google::protobuf::internal::InitSCC(
-      &scc_info_KGD_commitment_2eproto.base);
-  blindfactor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_KGD_commitment_2eproto.base);
+  blindfactor_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   y_ = nullptr;
 }
 
 KGD::~KGD() {
   // @@protoc_insertion_point(destructor:safeheron.proto.KGD)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void KGD::SharedDtor() {
-  blindfactor_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  blindfactor_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete y_;
 }
 
+void KGD::ArenaDtor(void* object) {
+  KGD* _this = reinterpret_cast< KGD* >(object);
+  (void)_this;
+}
+void KGD::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void KGD::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
 const KGD& KGD::default_instance() {
-  ::google::protobuf::internal::InitSCC(&::scc_info_KGD_commitment_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_KGD_commitment_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void KGD::Clear() {
 // @@protoc_insertion_point(message_clear_start:safeheron.proto.KGD)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  blindfactor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == nullptr && y_ != nullptr) {
+  blindfactor_.ClearToEmpty();
+  if (GetArena() == nullptr && y_ != nullptr) {
     delete y_;
   }
   y_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-const char* KGD::_InternalParse(const char* begin, const char* end, void* object,
-                  ::google::protobuf::internal::ParseContext* ctx) {
-  auto msg = static_cast<KGD*>(object);
-  ::google::protobuf::int32 size; (void)size;
-  int depth; (void)depth;
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
-  auto ptr = begin;
-  while (ptr < end) {
-    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+const char* KGD::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .safeheron.proto.CurvePoint y = 1;
-      case 1: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::safeheron::proto::CurvePoint::_InternalParse;
-        object = msg->mutable_y();
-        if (size > end - ptr) goto len_delim_till_end;
-        ptr += size;
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
-            {parser_till_end, object}, ptr - size, ptr));
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_y(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // string blindFactor = 2;
-      case 2: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("safeheron.proto.KGD.blindFactor");
-        object = msg->mutable_blindfactor();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_blindfactor();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "safeheron.proto.KGD.blindFactor"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
-          ctx->EndGroup(tag);
-          return ptr;
+          ctx->SetLastTag(tag);
+          goto success;
         }
-        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
-          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
-        ptr = res.first;
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        if (res.second) return ptr;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-string_till_end:
-  static_cast<::std::string*>(object)->clear();
-  static_cast<::std::string*>(object)->reserve(size);
-  goto len_delim_till_end;
-len_delim_till_end:
-  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
-                               {parser_till_end, object}, size);
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool KGD::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:safeheron.proto.KGD)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .safeheron.proto.CurvePoint y = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_y()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string blindFactor = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_blindfactor()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->blindfactor().data(), static_cast<int>(this->blindfactor().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "safeheron.proto.KGD.blindFactor"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:safeheron.proto.KGD)
-  return true;
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:safeheron.proto.KGD)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void KGD::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:safeheron.proto.KGD)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .safeheron.proto.CurvePoint y = 1;
-  if (this->has_y()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::y(this), output);
-  }
-
-  // string blindFactor = 2;
-  if (this->blindfactor().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->blindfactor().data(), static_cast<int>(this->blindfactor().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "safeheron.proto.KGD.blindFactor");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->blindfactor(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:safeheron.proto.KGD)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::google::protobuf::uint8* KGD::InternalSerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* KGD::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:safeheron.proto.KGD)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .safeheron.proto.CurvePoint y = 1;
   if (this->has_y()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::y(this), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::y(this), target, stream);
   }
 
   // string blindFactor = 2;
   if (this->blindfactor().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->blindfactor().data(), static_cast<int>(this->blindfactor().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_blindfactor().data(), static_cast<int>(this->_internal_blindfactor().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "safeheron.proto.KGD.blindFactor");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        2, this->blindfactor(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_blindfactor(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:safeheron.proto.KGD)
   return target;
@@ -400,43 +278,42 @@ size_t KGD::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:safeheron.proto.KGD)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string blindFactor = 2;
   if (this->blindfactor().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->blindfactor());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_blindfactor());
   }
 
   // .safeheron.proto.CurvePoint y = 1;
   if (this->has_y()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *y_);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void KGD::MergeFrom(const ::google::protobuf::Message& from) {
+void KGD::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:safeheron.proto.KGD)
   GOOGLE_DCHECK_NE(&from, this);
   const KGD* source =
-      ::google::protobuf::DynamicCastToGenerated<KGD>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<KGD>(
           &from);
   if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:safeheron.proto.KGD)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:safeheron.proto.KGD)
     MergeFrom(*source);
@@ -446,20 +323,19 @@ void KGD::MergeFrom(const ::google::protobuf::Message& from) {
 void KGD::MergeFrom(const KGD& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:safeheron.proto.KGD)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.blindfactor().size() > 0) {
-
-    blindfactor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.blindfactor_);
+    _internal_set_blindfactor(from._internal_blindfactor());
   }
   if (from.has_y()) {
-    mutable_y()->::safeheron::proto::CurvePoint::MergeFrom(from.y());
+    _internal_mutable_y()->::safeheron::proto::CurvePoint::MergeFrom(from._internal_y());
   }
 }
 
-void KGD::CopyFrom(const ::google::protobuf::Message& from) {
+void KGD::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:safeheron.proto.KGD)
   if (&from == this) return;
   Clear();
@@ -477,288 +353,166 @@ bool KGD::IsInitialized() const {
   return true;
 }
 
-void KGD::Swap(KGD* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void KGD::InternalSwap(KGD* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  blindfactor_.Swap(&other->blindfactor_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  blindfactor_.Swap(&other->blindfactor_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(y_, other->y_);
 }
 
-::google::protobuf::Metadata KGD::GetMetadata() const {
-  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_commitment_2eproto);
-  return ::file_level_metadata_commitment_2eproto[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata KGD::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void KGD_Num::InitAsDefaultInstance() {
-}
-class KGD_Num::HasBitSetters {
+class KGD_Num::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int KGD_Num::kNumFieldNumber;
-const int KGD_Num::kBlindFactorFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-KGD_Num::KGD_Num()
-  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
+KGD_Num::KGD_Num(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:safeheron.proto.KGD_Num)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:safeheron.proto.KGD_Num)
 }
 KGD_Num::KGD_Num(const KGD_Num& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  num_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.num().size() > 0) {
-    num_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.num_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  num_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_num().empty()) {
+    num_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_num(), 
+      GetArena());
   }
-  blindfactor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.blindfactor().size() > 0) {
-    blindfactor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.blindfactor_);
+  blindfactor_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_blindfactor().empty()) {
+    blindfactor_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_blindfactor(), 
+      GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:safeheron.proto.KGD_Num)
 }
 
 void KGD_Num::SharedCtor() {
-  ::google::protobuf::internal::InitSCC(
-      &scc_info_KGD_Num_commitment_2eproto.base);
-  num_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  blindfactor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_KGD_Num_commitment_2eproto.base);
+  num_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  blindfactor_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 KGD_Num::~KGD_Num() {
   // @@protoc_insertion_point(destructor:safeheron.proto.KGD_Num)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void KGD_Num::SharedDtor() {
-  num_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  blindfactor_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  num_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  blindfactor_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void KGD_Num::ArenaDtor(void* object) {
+  KGD_Num* _this = reinterpret_cast< KGD_Num* >(object);
+  (void)_this;
+}
+void KGD_Num::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void KGD_Num::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
 const KGD_Num& KGD_Num::default_instance() {
-  ::google::protobuf::internal::InitSCC(&::scc_info_KGD_Num_commitment_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_KGD_Num_commitment_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void KGD_Num::Clear() {
 // @@protoc_insertion_point(message_clear_start:safeheron.proto.KGD_Num)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  num_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  blindfactor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _internal_metadata_.Clear();
+  num_.ClearToEmpty();
+  blindfactor_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-const char* KGD_Num::_InternalParse(const char* begin, const char* end, void* object,
-                  ::google::protobuf::internal::ParseContext* ctx) {
-  auto msg = static_cast<KGD_Num*>(object);
-  ::google::protobuf::int32 size; (void)size;
-  int depth; (void)depth;
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
-  auto ptr = begin;
-  while (ptr < end) {
-    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+const char* KGD_Num::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // string num = 1;
-      case 1: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("safeheron.proto.KGD_Num.num");
-        object = msg->mutable_num();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          auto str = _internal_mutable_num();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "safeheron.proto.KGD_Num.num"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // string blindFactor = 2;
-      case 2: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("safeheron.proto.KGD_Num.blindFactor");
-        object = msg->mutable_blindfactor();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_blindfactor();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "safeheron.proto.KGD_Num.blindFactor"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
-          ctx->EndGroup(tag);
-          return ptr;
+          ctx->SetLastTag(tag);
+          goto success;
         }
-        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
-          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
-        ptr = res.first;
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        if (res.second) return ptr;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-string_till_end:
-  static_cast<::std::string*>(object)->clear();
-  static_cast<::std::string*>(object)->reserve(size);
-  goto len_delim_till_end;
-len_delim_till_end:
-  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
-                               {parser_till_end, object}, size);
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool KGD_Num::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:safeheron.proto.KGD_Num)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string num = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_num()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->num().data(), static_cast<int>(this->num().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "safeheron.proto.KGD_Num.num"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string blindFactor = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_blindfactor()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->blindfactor().data(), static_cast<int>(this->blindfactor().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "safeheron.proto.KGD_Num.blindFactor"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:safeheron.proto.KGD_Num)
-  return true;
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:safeheron.proto.KGD_Num)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void KGD_Num::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:safeheron.proto.KGD_Num)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string num = 1;
-  if (this->num().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->num().data(), static_cast<int>(this->num().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "safeheron.proto.KGD_Num.num");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->num(), output);
-  }
-
-  // string blindFactor = 2;
-  if (this->blindfactor().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->blindfactor().data(), static_cast<int>(this->blindfactor().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "safeheron.proto.KGD_Num.blindFactor");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->blindfactor(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:safeheron.proto.KGD_Num)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::google::protobuf::uint8* KGD_Num::InternalSerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* KGD_Num::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:safeheron.proto.KGD_Num)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string num = 1;
   if (this->num().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->num().data(), static_cast<int>(this->num().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_num().data(), static_cast<int>(this->_internal_num().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "safeheron.proto.KGD_Num.num");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        1, this->num(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_num(), target);
   }
 
   // string blindFactor = 2;
   if (this->blindfactor().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->blindfactor().data(), static_cast<int>(this->blindfactor().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_blindfactor().data(), static_cast<int>(this->_internal_blindfactor().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "safeheron.proto.KGD_Num.blindFactor");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        2, this->blindfactor(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_blindfactor(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:safeheron.proto.KGD_Num)
   return target;
@@ -768,43 +522,42 @@ size_t KGD_Num::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:safeheron.proto.KGD_Num)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string num = 1;
   if (this->num().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->num());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_num());
   }
 
   // string blindFactor = 2;
   if (this->blindfactor().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->blindfactor());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_blindfactor());
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void KGD_Num::MergeFrom(const ::google::protobuf::Message& from) {
+void KGD_Num::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:safeheron.proto.KGD_Num)
   GOOGLE_DCHECK_NE(&from, this);
   const KGD_Num* source =
-      ::google::protobuf::DynamicCastToGenerated<KGD_Num>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<KGD_Num>(
           &from);
   if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:safeheron.proto.KGD_Num)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:safeheron.proto.KGD_Num)
     MergeFrom(*source);
@@ -814,21 +567,19 @@ void KGD_Num::MergeFrom(const ::google::protobuf::Message& from) {
 void KGD_Num::MergeFrom(const KGD_Num& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:safeheron.proto.KGD_Num)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.num().size() > 0) {
-
-    num_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.num_);
+    _internal_set_num(from._internal_num());
   }
   if (from.blindfactor().size() > 0) {
-
-    blindfactor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.blindfactor_);
+    _internal_set_blindfactor(from._internal_blindfactor());
   }
 }
 
-void KGD_Num::CopyFrom(const ::google::protobuf::Message& from) {
+void KGD_Num::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:safeheron.proto.KGD_Num)
   if (&from == this) return;
   Clear();
@@ -846,38 +597,29 @@ bool KGD_Num::IsInitialized() const {
   return true;
 }
 
-void KGD_Num::Swap(KGD_Num* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void KGD_Num::InternalSwap(KGD_Num* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  num_.Swap(&other->num_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  blindfactor_.Swap(&other->blindfactor_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  num_.Swap(&other->num_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  blindfactor_.Swap(&other->blindfactor_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
 
-::google::protobuf::Metadata KGD_Num::GetMetadata() const {
-  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_commitment_2eproto);
-  return ::file_level_metadata_commitment_2eproto[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata KGD_Num::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace proto
 }  // namespace safeheron
-namespace google {
-namespace protobuf {
+PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::safeheron::proto::KGD* Arena::CreateMaybeMessage< ::safeheron::proto::KGD >(Arena* arena) {
-  return Arena::CreateInternal< ::safeheron::proto::KGD >(arena);
+  return Arena::CreateMessageInternal< ::safeheron::proto::KGD >(arena);
 }
 template<> PROTOBUF_NOINLINE ::safeheron::proto::KGD_Num* Arena::CreateMaybeMessage< ::safeheron::proto::KGD_Num >(Arena* arena) {
-  return Arena::CreateInternal< ::safeheron::proto::KGD_Num >(arena);
+  return Arena::CreateMessageInternal< ::safeheron::proto::KGD_Num >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
 #include <google/protobuf/port_undef.inc>
