@@ -65,23 +65,17 @@ BN CreateComWithBlind(std::vector<CurvePoint> &points, BN &blind_factor) {
 }
 
 BN CreateCom(BN &num) {
-    size_t byte_len = num.BitLength() / 8;
-    if(byte_len == 0) {
-        byte_len = 1;
-    }else if(byte_len * 8 < num.BitLength()){
-        byte_len ++;
-    }
-    BN blind_factor = safeheron::rand::RandomBN(byte_len);
+    BN blind_factor = safeheron::rand::RandomBN(256);
     return CreateComWithBlind(num, blind_factor);
 }
 
 BN CreateCom(CurvePoint &point) {
-    BN blind_factor = safeheron::rand::RandomBN(32);
+    BN blind_factor = safeheron::rand::RandomBN(256);
     return CreateComWithBlind(point, blind_factor);
 }
 
 BN CreateCom(std::vector<CurvePoint> &points) {
-    BN blind_factor = safeheron::rand::RandomBN(32);
+    BN blind_factor = safeheron::rand::RandomBN(256);
     return CreateComWithBlind(points, blind_factor);
 }
 
