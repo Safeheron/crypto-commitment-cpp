@@ -2,7 +2,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
         crypto-commitment/commitment.cpp
         crypto-commitment/kgd_curve_point.cpp
         crypto-commitment/kgd_number.cpp
-        crypto-commitment/commitment.pb.cc
+        crypto-commitment/proto_gen/commitment.pb.switch.cc
         )
 
 # Refer to single internal library only if it's not assembled into a big library.

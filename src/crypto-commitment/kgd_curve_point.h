@@ -3,7 +3,7 @@
 
 #include "crypto-bn/bn.h"
 #include "crypto-curve/curve.h"
-#include "commitment.pb.h"
+#include "proto_gen/commitment.pb.switch.h"
 
 namespace safeheron{
 namespace commitment {
