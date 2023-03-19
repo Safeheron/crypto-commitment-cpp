@@ -9,7 +9,7 @@ using safeheron::curve::CurvePoint;
 namespace safeheron{
 namespace commitment {
 
-BN CreateComWithBlind(BN &num, BN &blind_factor) {
+BN CreateComWithBlind(const BN &num, const BN &blind_factor) {
     uint8_t digest[CSHA256::OUTPUT_SIZE];
     CSHA256 sha256;
     std::string buf;
@@ -21,7 +21,21 @@ BN CreateComWithBlind(BN &num, BN &blind_factor) {
     return BN::FromBytesBE(digest, CSHA256::OUTPUT_SIZE);
 }
 
-BN CreateComWithBlind(CurvePoint &point, BN &blind_factor) {
+BN CreateComWithBlind(const std::vector<BN> &num_arr, const BN &blind_factor) {
+    uint8_t digest[CSHA256::OUTPUT_SIZE];
+    CSHA256 sha256;
+    std::string buf;
+    for(size_t i = 0; i < num_arr.size(); ++i) {
+        num_arr[i].ToBytesBE(buf);
+        sha256.Write((const uint8_t *) buf.c_str(), buf.length());
+    }
+    blind_factor.ToBytesBE(buf);
+    sha256.Write((const uint8_t*)buf.c_str(), buf.length());
+    sha256.Finalize(digest);
+    return BN::FromBytesBE(digest, CSHA256::OUTPUT_SIZE);
+}
+
+BN CreateComWithBlind(const CurvePoint &point, const BN &blind_factor) {
     uint8_t digest[CSHA256::OUTPUT_SIZE];
     CSHA256 sha256;
     std::string buf;
@@ -37,7 +51,7 @@ BN CreateComWithBlind(CurvePoint &point, BN &blind_factor) {
     return BN::FromBytesBE(digest, CSHA256::OUTPUT_SIZE);
 }
 
-BN CreateComWithBlind(std::vector<CurvePoint> &points, BN &blind_factor) {
+BN CreateComWithBlind(const std::vector<CurvePoint> &points, const BN &blind_factor) {
     uint8_t digest[CSHA256::OUTPUT_SIZE];
     CSHA256 sha256;
     std::string buf;
@@ -53,21 +67,6 @@ BN CreateComWithBlind(std::vector<CurvePoint> &points, BN &blind_factor) {
 
     sha256.Finalize(digest);
     return BN::FromBytesBE(digest, CSHA256::OUTPUT_SIZE);
-}
-
-BN CreateCom(BN &num) {
-    BN blind_factor = safeheron::rand::RandomBN(256);
-    return CreateComWithBlind(num, blind_factor);
-}
-
-BN CreateCom(CurvePoint &point) {
-    BN blind_factor = safeheron::rand::RandomBN(256);
-    return CreateComWithBlind(point, blind_factor);
-}
-
-BN CreateCom(std::vector<CurvePoint> &points) {
-    BN blind_factor = safeheron::rand::RandomBN(256);
-    return CreateComWithBlind(points, blind_factor);
 }
 
 }
